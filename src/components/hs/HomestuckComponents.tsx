@@ -3,7 +3,11 @@ import oneway from "../../images/anotheroneway.png";
 import pfp from "../../images/sunroofhakaido.png";
 import { useState } from "react";
 import { Chevron } from "../general/Icons";
-import { PestercordThemeDesc } from "./projectDescs/PestercordThemeDesc";
+import PestercordThemeDesc from "./projectDescs/PestercordThemeDesc";
+import PestercordNoisesDesc from "./projectDescs/PestercordNoisesDesc";
+import VEWebAppsDesc from "./projectDescs/VEWebAppsDesc";
+import NiereactDesc from "./projectDescs/NiereactDesc";
+import FutureProjectsDesc from "./projectDescs/FutureProjectsDesc";
 
 export const HsPage: React.FC<HsPageProps> = ({ children }) => {
     return (
@@ -88,6 +92,24 @@ export const HsIntroChunk = () => {
                     link="https://github.com/luminaryFlowers/Pesterchum-Discord-Theme"
                 >
                     <PestercordThemeDesc />
+                </HsProjectChunk>
+                <HsProjectChunk
+                    title="Pestercord Noises"
+                    link="https://github.com/luminaryFlowers/pestercord-noises"
+                >
+                    <PestercordNoisesDesc />
+                </HsProjectChunk>
+                <HsProjectChunk title="Vast Error Web Apps">
+                    <VEWebAppsDesc />
+                </HsProjectChunk>
+                <HsProjectChunk
+                    title="NieReact"
+                    link="https://luminaryflowers.github.io/niereact/"
+                >
+                    <NiereactDesc />
+                </HsProjectChunk>
+                <HsProjectChunk title="Future Plans">
+                    <FutureProjectsDesc />
                 </HsProjectChunk>
             </div>
         </>

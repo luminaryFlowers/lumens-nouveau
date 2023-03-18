@@ -1,7 +1,7 @@
 import { ImageWithDesc } from "~/components/general/ExtraComponents";
 import display from "../../../images/projects/pestercord/display.png";
 
-export const PestercordThemeDesc = () => {
+const PestercordThemeDesc = () => {
     return (
         <>
             <ImageWithDesc
@@ -57,3 +57,5 @@ export const PestercordThemeDesc = () => {
         </>
     );
 };
+
+export default PestercordThemeDesc;

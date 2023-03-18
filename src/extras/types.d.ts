@@ -7,9 +7,3 @@ type HsProjectChunkProps = {
     link?: string;
     title: string;
 }
-
-type ImageWithDescProps = {
-    image: StaticImageData;
-    alt: string;
-    description: string;
-}
