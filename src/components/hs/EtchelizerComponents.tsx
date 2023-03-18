@@ -14,15 +14,8 @@ type EtchelizerCSProps = {
 };
 
 export const EtchelizerSymbolSelector: React.FC<EtchelizerGenProps> = ({
-    selectedLines,
     setSelectedLines,
 }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const reverseOpenState = () => {
-        setIsOpen(!isOpen);
-    };
-
     let sortedPatterns = EtchelizerPatterns.map((pattern) => pattern.name);
     sortedPatterns.sort();
 
@@ -67,15 +60,10 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
     setSelectedLines,
     setCustomPattern,
 }) => {
-    const [isOpen, setIsOpen] = useState(false);
     const [currentCode, setCurrentCode] = useState("");
     const [inputCode, setInputCode] = useState("");
     const [inputName, setInputName] = useState("");
     const [errorShown, setErrorShown] = useState(false);
-
-    const reverseOpenState = () => {
-        setIsOpen(!isOpen);
-    };
 
     const convertSymbolToCode = () => {
         let codeString = "";
@@ -90,7 +78,7 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
     };
 
     const getPatternFromCode = (code: string) => {
-        let symbolList: string[] = [];
+        const symbolList: string[] = [];
 
         for (let i = 0; i < code.length; i++) {
             if (
@@ -193,7 +181,7 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
                         <span
                             className="cursor-pointer font-bold underline"
                             onClick={() => {
-                                let code = `${
+                                const code = `${
                                     inputName ? `${inputName}|` : ""
                                 }${convertSymbolToCode()}`;
                                 setCurrentCode(code);
@@ -223,7 +211,7 @@ export const EtchelizerDisplay: React.FC<EtchelizerGenProps> = ({
     const DESELECTED_COLOUR = "rgba(0,0,0,0.1)";
 
     const selDeselLine = (lineName: string) => {
-        let index = selectedLines.indexOf(lineName);
+        const index = selectedLines.indexOf(lineName);
 
         if (index > -1) {
             selectedLines.splice(index, 1);
