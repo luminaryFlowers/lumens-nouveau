@@ -16,13 +16,18 @@ type EtchelizerCSProps = {
 export const EtchelizerSymbolSelector: React.FC<EtchelizerGenProps> = ({
     setSelectedLines,
 }) => {
-    let sortedPatterns = EtchelizerPatterns.map((pattern) => pattern.name);
+    const sortedPatterns = EtchelizerPatterns.map((pattern) => pattern.name);
     sortedPatterns.sort();
 
     const getListFromName = (patternName: string) => {
         for (let i = 0; i < EtchelizerPatterns.length; i++) {
-            if (EtchelizerPatterns[i]!.name === patternName)
-                return EtchelizerPatterns[i]!.pattern.slice();
+            if (
+                (EtchelizerPatterns[i] as { name: string; pattern: string[] })
+                    .name === patternName
+            )
+                return (
+                    EtchelizerPatterns[i] as { name: string; pattern: string[] }
+                ).pattern.slice();
         }
 
         return [];
@@ -70,7 +75,7 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
 
         for (let i = 0; i < selectedLines.length; i++) {
             codeString += String.fromCharCode(
-                AllSides.indexOf(selectedLines[i]!) + 65
+                AllSides.indexOf(selectedLines[i] as string) + 65
             );
         }
 
@@ -85,7 +90,7 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
                 code.charCodeAt(i) - 65 < AllSides.length &&
                 code.charCodeAt(i) >= 0
             )
-                symbolList.push(AllSides[code.charCodeAt(i) - 65]!);
+                symbolList.push(AllSides[code.charCodeAt(i) - 65] as string);
         }
 
         return symbolList;
@@ -93,15 +98,15 @@ export const EtchelizerCustomSymbols: React.FC<EtchelizerCSProps> = ({
 
     const importCode = (code: string) => {
         try {
-            let splitCode: string[] = code.split("|");
-            let name: string = "";
+            const splitCode: string[] = code.split("|");
+            let name = "";
             let pattern: string[] = [];
 
             if (splitCode.length > 1) {
-                name = splitCode[0]!;
-                pattern = getPatternFromCode(splitCode[1]!);
+                name = splitCode[0] as string;
+                pattern = getPatternFromCode(splitCode[1] as string);
             } else {
-                pattern = getPatternFromCode(splitCode[0]!);
+                pattern = getPatternFromCode(splitCode[0] as string);
             }
 
             setCustomPattern({

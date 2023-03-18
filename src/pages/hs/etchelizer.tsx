@@ -35,8 +35,20 @@ const Etchelizer: NextPage = () => {
         }
 
         for (let i = 0; i < EtchelizerPatterns.length; i++) {
-            if (compareArrays(EtchelizerPatterns[i]!.pattern, selectedLines)) {
-                return EtchelizerPatterns[i]!.name;
+            if (
+                compareArrays(
+                    (
+                        EtchelizerPatterns[i] as {
+                            name: string;
+                            pattern: string[];
+                        }
+                    ).pattern,
+                    selectedLines
+                )
+            ) {
+                return (
+                    EtchelizerPatterns[i] as { name: string; pattern: string[] }
+                ).name;
             }
         }
 
