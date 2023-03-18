@@ -8,14 +8,42 @@ import PestercordNoisesDesc from "./projectDescs/PestercordNoisesDesc";
 import VEWebAppsDesc from "./projectDescs/VEWebAppsDesc";
 import NiereactDesc from "./projectDescs/NiereactDesc";
 import FutureProjectsDesc from "./projectDescs/FutureProjectsDesc";
+import Link from "next/link";
+
+export const HsLinkHeader = () => {
+    return (
+        <p className="pt-3 text-center text-white [&>a]:border-b [&>a]:border-b-white [&>a]:pb-[1px]">
+            <Link href="/">
+                <span>Home</span>
+            </Link>
+            <span> • </span>
+            <Link href="/hs/repsweeps">
+                <span>Repsweeps</span>
+            </Link>
+            <span> • </span>
+            <Link href="/hs/etchelizer">
+                <span>Etchelizer</span>
+            </Link>
+            <span> • </span>
+            <Link href="/hs/hemospectrum">
+                <span>Hemospectrum</span>
+            </Link>
+            {/* <span> • </span>
+                <Link to="/hs/etchtime"><span>Etch Time</span></Link> */}
+        </p>
+    );
+};
 
 export const HsPage: React.FC<HsPageProps> = ({ children }) => {
     return (
-        <div className="my-[20px] mx-auto max-w-[970px] bg-bg-page py-7">
-            <div className="my-0 mx-auto max-w-[650px] bg-bg-body">
-                {children}
+        <>
+            <HsLinkHeader />
+            <div className="my-[20px] mx-auto max-w-[970px] bg-bg-page py-7">
+                <div className="my-0 mx-auto max-w-[650px] bg-bg-body">
+                    {children}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
@@ -117,7 +145,7 @@ export const HsIntroChunk = () => {
 };
 
 export const HsSectionDivider = () => {
-    return <hr className="mx-[40px] my-[24px] text-[#757575]" />;
+    return <hr className="mx-[40px] my-[24px] border-[#757575]" />;
 };
 
 const HsProjectChunk: React.FC<HsProjectChunkProps> = ({

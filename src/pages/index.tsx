@@ -1,7 +1,11 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 //import Link from "next/link";
-import { HsPage, HsIntroChunk } from "~/components/hs/HomestuckComponents";
+import {
+    HsPage,
+    HsIntroChunk,
+    HsLinkHeader,
+} from "~/components/hs/HomestuckComponents";
 
 const Home: NextPage = () => {
     return (
