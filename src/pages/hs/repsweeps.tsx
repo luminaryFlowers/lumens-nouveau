@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Head from "next/head";
 import { HsPage } from "~/components/hs/HomestuckComponents";
 import { useState } from "react";

@@ -115,30 +115,30 @@ export const HsIntroChunk = () => {
                 </p>
             </div>
             <div className="pb-[20px]">
-                <HsProjectChunk
+                <HsHiderChunk
                     title="Pestercord Theme"
                     link="https://github.com/luminaryFlowers/Pesterchum-Discord-Theme"
                 >
                     <PestercordThemeDesc />
-                </HsProjectChunk>
-                <HsProjectChunk
+                </HsHiderChunk>
+                <HsHiderChunk
                     title="Pestercord Noises"
                     link="https://github.com/luminaryFlowers/pestercord-noises"
                 >
                     <PestercordNoisesDesc />
-                </HsProjectChunk>
-                <HsProjectChunk title="Vast Error Web Apps">
+                </HsHiderChunk>
+                <HsHiderChunk title="Vast Error Web Apps">
                     <VEWebAppsDesc />
-                </HsProjectChunk>
-                <HsProjectChunk
+                </HsHiderChunk>
+                <HsHiderChunk
                     title="NieReact"
                     link="https://luminaryflowers.github.io/niereact/"
                 >
                     <NiereactDesc />
-                </HsProjectChunk>
-                <HsProjectChunk title="Future Plans">
+                </HsHiderChunk>
+                <HsHiderChunk title="Future Plans">
                     <FutureProjectsDesc />
-                </HsProjectChunk>
+                </HsHiderChunk>
             </div>
         </>
     );
@@ -148,7 +148,7 @@ export const HsSectionDivider = () => {
     return <hr className="mx-[40px] my-[24px] border-[#757575]" />;
 };
 
-const HsProjectChunk: React.FC<HsProjectChunkProps> = ({
+export const HsHiderChunk: React.FC<HsProjectChunkProps> = ({
     children,
     link,
     title,
@@ -170,7 +170,7 @@ const HsProjectChunk: React.FC<HsProjectChunkProps> = ({
                 <Chevron
                     fill="black"
                     size={28}
-                    className={isOpen ? "" : "rotate-180"}
+                    className={!isOpen ? "" : "rotate-180"}
                 />{" "}
                 {title}
             </h2>
