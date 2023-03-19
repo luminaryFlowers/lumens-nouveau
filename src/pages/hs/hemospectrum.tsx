@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { HsPage } from "~/components/hs/HomestuckComponents";
 import { COLOURS, CHARACTERS_COLOURS } from "~/extras/hemospectrumStuff";
-import { type RGBColor, SketchPicker, HSLColor } from "react-color";
+import { type RGBColor, SketchPicker, type HSLColor } from "react-color";
 
 const Hemospectrum: NextPage = () => {
     const [selectedColour, setSelectedColour] = useState<RGBColor>({

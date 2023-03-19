@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AllSides, EtchelizerPatterns } from "~/extras/etchelizerPatterns";
 import { HsHiderChunk } from "./HomestuckComponents";
+import { Fragment } from "react";
 
 type EtchelizerGenProps = {
     selectedLines: string[];
@@ -39,7 +40,7 @@ export const EtchelizerSymbolSelector: React.FC<EtchelizerGenProps> = ({
                 <p className="px-[48px] text-center font-bold leading-[2] [&>span]:cursor-pointer [&>span]:underline">
                     {sortedPatterns.map((pattern) => {
                         return (
-                            <>
+                            <Fragment key={pattern}>
                                 <> &nbsp;</>
                                 <span
                                     onClick={() =>
@@ -51,7 +52,7 @@ export const EtchelizerSymbolSelector: React.FC<EtchelizerGenProps> = ({
                                     {pattern}
                                 </span>
                                 <>&nbsp; </>
-                            </>
+                            </Fragment>
                         );
                     })}
                 </p>
