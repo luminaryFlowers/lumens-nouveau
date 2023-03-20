@@ -142,7 +142,7 @@ const Hemospectrum: NextPage = () => {
                             Hemospectrum
                         </h1>
 
-                        <p className="py-2">
+                        <p className="pb-2">
                             {`This is a tool that tells you what blood caste and
                             subcaste a colour falls under!`}
                         </p>
