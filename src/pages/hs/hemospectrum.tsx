@@ -132,7 +132,10 @@ const Hemospectrum: NextPage = () => {
         <>
             <Head>
                 <title>lumen&apos;s site</title>
-                <meta name="description" content="luminaryFlowers' site" />
+                <meta
+                    name="description"
+                    content="A tool for selecting colours from the Repitonian hemospectrum. "
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>

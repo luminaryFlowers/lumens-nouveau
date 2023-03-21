@@ -59,7 +59,10 @@ const Etchelizer: NextPage = () => {
         <>
             <Head>
                 <title>lumen&apos;s site</title>
-                <meta name="description" content="luminaryFlowers' site" />
+                <meta
+                    name="description"
+                    content="A tool for transcribing alchemical words from Vast Error's Narayan Code."
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>

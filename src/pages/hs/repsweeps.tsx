@@ -21,7 +21,10 @@ const Repsweeps: NextPage = () => {
         <>
             <Head>
                 <title>lumen&apos;s site</title>
-                <meta name="description" content="luminaryFlowers' site" />
+                <meta
+                    name="description"
+                    content="A tool for converting Earth years to Repitonian sweeps."
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
