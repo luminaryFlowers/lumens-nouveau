@@ -9,6 +9,7 @@ import VEWebAppsDesc from "./projectDescs/VEWebAppsDesc";
 import NiereactDesc from "./projectDescs/NiereactDesc";
 import FutureProjectsDesc from "./projectDescs/FutureProjectsDesc";
 import Link from "next/link";
+import HomestuckPageStyles from "./HomestuckPageStyles";
 
 export const HsLinkHeader = () => {
     return (
@@ -37,6 +38,7 @@ export const HsLinkHeader = () => {
 export const HsPage: React.FC<HsPageProps> = ({ children }) => {
     return (
         <>
+            <HomestuckPageStyles />
             <HsLinkHeader />
             <div className="my-[20px] mx-auto max-w-[970px] bg-bg-page py-7">
                 <div className="my-0 mx-auto max-w-[650px] bg-bg-body">
