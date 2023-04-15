@@ -101,7 +101,8 @@ export const HsIntroChunk = () => {
 
                 <p className="py-2">
                     {`This is my sort of portfolio/project website, so everything
-                    that I work on will be going here!`}
+                    that I work on will be going here! This site was made with NextJS
+                    using Typescript.`}
                 </p>
 
                 <p className="py-2">
