@@ -23,7 +23,7 @@ const FutureProjectsDesc = () => {
                         </li> */}
                         <li>
                             <b>Word of Jayden</b>:
-                            {`This is a project built to be a resource for BrownDust2.
+                            {` This is a project built to be a resource for BrownDust2.
                             Right now, I'm just planning on making it have a list of
                             characters and their costumes and skills, but I'd like it
                             to be more fleshed out in the future!`}
