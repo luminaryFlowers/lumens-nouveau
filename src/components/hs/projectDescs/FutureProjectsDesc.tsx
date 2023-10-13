@@ -22,11 +22,11 @@ const FutureProjectsDesc = () => {
                             which is not possible with regular Pestercord!`}
                         </li> */}
                         <li>
-                            <b>Word of Jayden</b>:
-                            {` This is a project built to be a resource for BrownDust2.
-                            Right now, I'm just planning on making it have a list of
-                            characters and their costumes and skills, but I'd like it
-                            to be more fleshed out in the future!`}
+                            <b>{`then;again`}</b>:
+                            {` This is a game project I'll be working on as part of school. 
+                            It's a story-oriented action game about an amnesiac named Callisto who 
+                            has a mysterious connection to the previous end of the world, and a god 
+                            named Memory who seeks to bring back their dead companion.`}
                         </li>
                     </ul>
                 </p>
