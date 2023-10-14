@@ -1,6 +1,6 @@
 import Image from "next/image";
 import oneway from "../../images/anotheroneway.png";
-import pfp from "../../images/avatars/violineuden.png";
+import pfp from "../../images/avatars/davekat.png";
 import { useState } from "react";
 import { Chevron } from "../general/Icons";
 import PestercordThemeDesc from "./projectDescs/PestercordThemeDesc";
@@ -61,7 +61,7 @@ export const HsIntroChunk = () => {
             <Image
                 src={pfp}
                 className="relative mx-auto mt-[-90px] w-[180px] rounded-full shadow-xl"
-                title="Character is Euden from Dragalia Lost"
+                title="Character is Dave Strider from Homestuck Beyond Canon"
                 alt="profile picture"
             />
 

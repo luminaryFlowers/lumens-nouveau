@@ -23,7 +23,7 @@ const FutureProjectsDesc = () => {
                         </li> */}
                         <li>
                             <b>{`then;again`}</b>:
-                            {` This is a game project I'll be working on as part of school. 
+                            {` This is a game project I'll be working on as part of school! 
                             It's a story-oriented action game about an amnesiac named Callisto who 
                             has a mysterious connection to the previous end of the world, and a god 
                             named Memory who seeks to bring back their dead companion.`}
