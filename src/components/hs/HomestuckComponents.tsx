@@ -72,10 +72,10 @@ export const HsIntroChunk = () => {
             <div className="px-12">
                 <p className="text-center">
                     <a
-                        href="https://lumenscode.tumblr.com/"
+                        href="https://bsky.app/profile/lumenscode.bsky.social"
                         className="font-bold underline"
                     >
-                        TUMBLR
+                        BLUESKY
                     </a>
                     <span> • </span>
                     <a
@@ -94,7 +94,7 @@ export const HsIntroChunk = () => {
                 </p>
 
                 <p className="mt-2 py-2">
-                    {`You can call me Lumen, or LF! I'm a 21 year old guy with a
+                    {`You can call me Lumen, or LF! I'm a 22 year old guy with a
                     penchant for programming. My pronouns are he/they. I don't
                     use this much capitalization usually.`}
                 </p>
