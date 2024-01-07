@@ -72,7 +72,7 @@ export const HsIntroChunk = () => {
             <div className="px-12">
                 <p className="text-center">
                     <a
-                        href="https://bsky.app/profile/lumenscode.bsky.social"
+                        href="https://bsky.app/profile/lumens.live"
                         className="font-bold underline"
                     >
                         BLUESKY
