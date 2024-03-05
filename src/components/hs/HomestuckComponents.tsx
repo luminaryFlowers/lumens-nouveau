@@ -1,6 +1,6 @@
 import Image from "next/image";
 import oneway from "../../images/anotheroneway.png";
-import pfp from "../../images/avatars/davekat.png";
+import pfp from "../../images/avatars/sunroofhakaido.png";
 import { useState } from "react";
 import { Chevron } from "../general/Icons";
 import PestercordThemeDesc from "./projectDescs/PestercordThemeDesc";
