@@ -33,7 +33,7 @@ const ThenAgain: NextPage = () => {
                                 <i>{`Not anymore.`}</i>
                             </p>
                             <p>
-                                <i>{`This is not YOUR story.`}</i>
+                                <i>{`This is YOUR story.`}</i>
                             </p>
                             <p>
                                 <i>{`And your name is...`}</i>
