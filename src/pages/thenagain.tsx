@@ -49,9 +49,9 @@ const ThenAgain: NextPage = () => {
 
                         <p className="pb-6">
                             {`You'll follow `}
-                            <b>{`Callisto`}</b>
+                            <b>{`Callisto (he/him)`}</b>
                             {` and `}
-                            <b>{`Mory`}</b>
+                            <b>{`Mory (they/them)`}</b>
                             {` in their journey to uncover the truth behind stray memories that have appeared
                             in the world. And maybe Callisto will regain his memories, in this story that is
                             thematically about memories...? It's definitely possible.`}
