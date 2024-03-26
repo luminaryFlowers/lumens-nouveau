@@ -35,23 +35,24 @@ const PestercordThemeDesc = () => {
                 </p>
 
                 <p className="py-2">
-                    {`Unfortunately, the Pesterchum themed user profiles stopped
-                    working after Discord overhauled their the profile display,
-                    and with how Nitro modifies these, I'm not sure if I'll be
-                    bringing these back :(`}
-                </p>
-
-                <p className="py-2">
-                    {`It was a lot of fun to work on, and it's really what made me
-                    want to start doing more Homestuck projects. I still update
-                    it every so often with little fixes and changes, and if it
-                    ever breaks again, I fully intend to get it back into
-                    working order!`}
+                    <b>{`UPD8`}</b>
+                    {`: I got too busy with school and couldn't find time to
+                    continue to update it, but `}
+                    <a
+                        href="https://github.com/Saltssaumure"
+                        className="underline"
+                    >{`Saltssaumure`}</a>
+                    {` on GitHub has taken up the torch!! Check out their new fork `}
+                    <a
+                        href="https://github.com/MiniDiscordThemes/Pesterchum"
+                        className="underline"
+                    >{`here`}</a>
+                    {`!!`}
                 </p>
 
                 <p className="py-2">
                     {`(special thank you to adi for giving me ideas and also
-                    sending me the original pestercord :o !!)`}
+                    sending me the original pestercord!!)`}
                 </p>
             </div>
         </>

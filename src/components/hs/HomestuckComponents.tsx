@@ -10,6 +10,7 @@ import NiereactDesc from "./projectDescs/NiereactDesc";
 import FutureProjectsDesc from "./projectDescs/FutureProjectsDesc";
 import Link from "next/link";
 import HomestuckPageStyles from "./HomestuckPageStyles";
+import ThenAgainDesc from "./projectDescs/ThenAgainDesc";
 
 export const HsLinkHeader = () => {
     return (
@@ -118,6 +119,9 @@ export const HsIntroChunk = () => {
                 </p>
             </div>
             <div className="pb-[20px]">
+                <HsHiderChunk title="then;again" link="/thenagain">
+                    <ThenAgainDesc />
+                </HsHiderChunk>
                 <HsHiderChunk
                     title="Pestercord Theme"
                     link="https://github.com/luminaryFlowers/Pesterchum-Discord-Theme"
