@@ -1,5 +1,6 @@
 // import { type NextPage, GetServerSideProps } from "next";
-import { Feed, FeedOptions, Item } from "feed";
+import { Feed, type FeedOptions, Item } from "feed";
+import { GetServerSidePropsContext } from "next";
 
 const PalestineClicks = () => {
     return <></>;
@@ -18,7 +19,10 @@ const rssInfoBlock: FeedOptions = {
     copyright: "n/a",
 };
 
-export async function getServerSideProps({ res }: response) {
+export async function getServerSideProps({
+    res,
+    req,
+}: GetServerSidePropsContext) {
     const feed = new Feed(rssInfoBlock);
 
     let date: Date = new Date();
