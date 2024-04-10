@@ -19,13 +19,10 @@ const rssInfoBlock: FeedOptions = {
     copyright: "n/a",
 };
 
-export async function getServerSideProps({
-    res,
-    req,
-}: GetServerSidePropsContext) {
+export function getServerSideProps({ res, req }: GetServerSidePropsContext) {
     const feed = new Feed(rssInfoBlock);
 
-    let date: Date = new Date();
+    const date: Date = new Date();
     date.setHours(0, 0, 0, 0);
 
     feed.addItem({
