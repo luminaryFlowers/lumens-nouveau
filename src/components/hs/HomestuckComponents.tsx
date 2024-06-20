@@ -66,17 +66,19 @@ export const HsIntroChunk = () => {
                 alt="profile picture"
             />
 
-            <h1 className="m-5 text-center text-[24pt] font-bold">
+            <h1 className="mt-5 text-center text-[24pt] font-bold accent-text">
                 luminaryFlowers
             </h1>
+
+            <hr className="mt-1 mb-6 mx-24 border-t-2 border-bg-page" />
 
             <div className="px-12">
                 <p className="text-center">
                     <a
-                        href="https://bsky.app/profile/lumens.live"
+                        href="https://blog.lumens.live/"
                         className="font-bold underline"
                     >
-                        BLUESKY
+                        BLOG
                     </a>
                     <span> • </span>
                     <a

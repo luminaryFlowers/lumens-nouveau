@@ -10,6 +10,7 @@ const config = {
                     body: "#EFEFEF",
                 },
             },
+            "mine": "var(--my-colour)"
         },
     },
     plugins: [],
